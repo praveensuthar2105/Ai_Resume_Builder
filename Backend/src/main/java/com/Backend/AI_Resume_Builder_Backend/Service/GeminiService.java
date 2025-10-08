@@ -15,7 +15,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @Service
 public class GeminiService {
     private static final String GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=";
-
     private final String apiKey;
     private final HttpClient httpClient = HttpClient.newHttpClient();
 
