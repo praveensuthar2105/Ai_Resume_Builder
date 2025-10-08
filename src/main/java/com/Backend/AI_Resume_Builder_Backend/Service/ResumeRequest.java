@@ -4,21 +4,18 @@ public class ResumeRequest {
     private String userResumeDescription;
     private String message;
 
-    // No-arg constructor required by Jackson for deserialization
-    public ResumeRequest() {
-    }
-
     public ResumeRequest(String userResumeDescription) {
         this.userResumeDescription = userResumeDescription;
     }
 
-    // Getter / Setter
+    // This record is used to encapsulate the request data for generating a resume.
+    // It contains a single field, userResumeDescription, which holds the
+    // description provided by the user.
+    // The record automatically generates the constructor, getters, equals,
+    // hashCode, and toString methods.
+
     public String getUserResumeDescription() {
         return userResumeDescription;
-    }
-
-    public void setUserResumeDescription(String userResumeDescription) {
-        this.userResumeDescription = userResumeDescription;
     }
 
     public String getMessage() {
@@ -27,13 +24,5 @@ public class ResumeRequest {
 
     public void setMessage(String message) {
         this.message = message;
-    }
-
-    @Override
-    public String toString() {
-        return "ResumeRequest{" +
-                "userResumeDescription='" + userResumeDescription + '\'' +
-                ", message='" + message + '\'' +
-                '}';
     }
 }
