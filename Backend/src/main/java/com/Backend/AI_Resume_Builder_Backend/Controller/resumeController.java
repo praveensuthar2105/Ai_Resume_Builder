@@ -81,5 +81,4 @@ public class resumeController {
 			return new ResponseEntity<>(errorResponse, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
-		}
-	
+}
